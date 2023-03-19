@@ -75,9 +75,11 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="proc-monitor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core.h" />
     <ClInclude Include="proc-monitor.h" />
   </ItemGroup>
   <ItemDefinitionGroup />

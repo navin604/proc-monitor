@@ -1,7 +1,17 @@
-#include <cstdio>
+#include "Core.h"
 
-int main()
+
+
+void get_pid(std::vector<std::string>& pid_vec)
 {
-    printf("hello from %s!\n", "proc_monitor");
-    return 0;
+
 }
+
+
+void start() 
+{
+	std::cout << "Start function";
+}
+
+
+
