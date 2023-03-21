@@ -5,7 +5,6 @@ namespace fs = std::filesystem;
 
 void get_pid(std::vector<std::string> &pid_vec)
 {
-	std::cout << "In get_pid\n";
 	std::string path = "/proc";
     for (const auto& entry : fs::directory_iterator(path))
     {
@@ -96,10 +95,6 @@ void get_pid(std::vector<std::string> &pid_vec)
      }
      inode = symlink.substr(inode_pos, inode_end_pos - inode_pos);
      
-
-
-
-
  }
 
  void get_port(std::string symlink, std::string& pid)
@@ -204,6 +199,7 @@ void get_pid(std::vector<std::string> &pid_vec)
      get_fd_files(pid);
      std::cout << "-------------------------------------------------\n";
      std::cout << "-------------------------------------------------\n";
+     std::cout << "\n";
       
 
 }
