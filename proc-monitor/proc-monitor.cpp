@@ -130,10 +130,10 @@ void get_pid(std::vector<std::string> &pid_vec)
          pclose(file);
      }
      if (!port.empty()) {
-         std::cout << symlink << " using port: " << port << std::endl;
+         std::cout << "Port: " << port << " is in use by " << symlink << std::endl;
      }
      else {
-         std::cout << symlink << " is not using a port" << port << std::endl;
+         std::cout << symlink << " is not using a port" << std::endl;
      }     
   }
 
